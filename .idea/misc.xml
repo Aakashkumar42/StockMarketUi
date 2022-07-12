@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/MyUiDesign/app/src/main/res/drawable/btn_background_color.xml" value="0.187" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/MyUiDesign/app/src/main/res/drawable/btn_shape.xml" value="0.1075" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/MyUiDesign/app/src/main/res/drawable/circleimageview.xml" value="0.1075" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/MyUiDesign/app/src/main/res/drawable/edittextshape.xml" value="0.188" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/MyUiDesign/app/src/main/res/drawable/graph_icon.xml" value="0.1075" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/MyUiDesign/app/src/main/res/drawable/ic_arrow.xml" value="0.1075" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/MyUiDesign/app/src/main/res/drawable/shape_only.xml" value="0.1075" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/MyUiDesign/app/src/main/res/layout/activity_detail.xml" value="0.22" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/MyUiDesign/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/MyUiDesign/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/MyUiDesign/app/src/main/res/layout/fragment_stock.xml" value="0.1796875" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/MyUiDesign/app/src/main/res/layout/home_toolbar_layout.xml" value="0.17864583333333334" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/MyUiDesign/app/src/main/res/layout/item_toolbar.xml" value="0.1796875" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/MyUiDesign/app/src/main/res/layout/market_mover_layout.xml" value="0.1796875" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/MyUiDesign/app/src/main/res/layout/portfolio_layout.xml" value="0.1" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/MyUiDesign/app/src/main/res/layout/stock_activity_layout.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/MyUiDesign/app/src/main/res/layout/stock_toolbar.xml" value="0.1796875" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/MyUiDesign/app/src/main/res/menu/main_menu.xml" value="0.1796875" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/MyUiDesign/app/src/main/res/menu/nagivation_menu.xml" value="0.1796875" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/MyUiDesign/app/src/main/res/menu/navigation_menu.xml" value="0.17864583333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1796875" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        app:cardBackgroundColor="@color/cardBackground"
+        android:elevation="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_20sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:padding="@dimen/_10sdp"
+                android:id="@+id/tvtitle"
+                android:textColor="@color/cardTextColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Portfolio Value"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="normal" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_below="@id/tvtitle"
+                android:padding="@dimen/_10sdp"
+                android:id="@+id/tvDollerPrice"
+                android:textColor="@color/cardTextColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$15,136.12"
+                android:textSize="@dimen/_25sdp"
+                android:textStyle="bold" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_below="@id/tvtitle"
+                android:layout_toRightOf="@id/tvDollerPrice"
+                android:padding="@dimen/_10sdp"
+                android:id="@+id/tvDollerPercente"
+                android:textColor="@color/cardTextColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="21%^"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnDeposit"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@id/tvDollerPrice"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:background="@drawable/btn_shape"
+                android:text="Deposit"
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:id="@+id/btnWithdraw"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@id/tvDollerPrice"
+                android:layout_toRightOf="@id/btnDeposit"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="Withdraw" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+        <RelativeLayout
+            android:id="@+id/listLayout"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@id/cardview1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:text="WatchList"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginRight="@dimen/_15sdp"
+                android:text="See All"
+                android:textColor="@color/themeColorText"
+                android:textSize="@dimen/_11sdp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+         <androidx.cardview.widget.CardView
+             android:id="@+id/cardview2"
+             android:layout_marginLeft="@dimen/_20sdp"
+             android:layout_marginRight="@dimen/_20sdp"
+             android:padding="@dimen/_10sdp"
+             app:layout_constraintTop_toBottomOf="@id/listLayout"
+             app:cardElevation="@dimen/_5sdp"
+             app:cardCornerRadius="@dimen/_20sdp"
+             card_view:cardBackgroundColor="@android:color/transparent"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+          <RelativeLayout
+              android:layout_marginTop="@dimen/_20sdp"
+              android:padding="@dimen/_10sdp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <de.hdodenhof.circleimageview.CircleImageView
+                  android:id="@+id/ivAdobeLogo"
+                  android:layout_width="@dimen/_30sdp"
+                  android:layout_height="@dimen/_30sdp"
+                  android:layout_marginLeft="@dimen/_15sdp"
+                  android:src="@drawable/adobe_logo2" />
+              <androidx.appcompat.widget.AppCompatTextView
+                  android:id="@+id/tvcompanyName"
+                  android:textStyle="bold"
+                  android:layout_marginLeft="@dimen/_10sdp"
+                  android:textSize="@dimen/_14sdp"
+                  android:layout_toRightOf="@id/ivAdobeLogo"
+                  android:text="ADB"
+                  android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+              <androidx.appcompat.widget.AppCompatTextView
+                  android:layout_below="@id/tvcompanyName"
+                  android:layout_marginLeft="@dimen/_10sdp"
+                  android:textSize="@dimen/_14sdp"
+                  android:layout_toRightOf="@id/ivAdobeLogo"
+                  android:text="Adobe Inc"
+                  android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+
+              <androidx.appcompat.widget.AppCompatTextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:layout_marginLeft="@dimen/_10sdp"
+                  android:layout_marginEnd="@dimen/_10sdp"
+                  android:layout_marginRight="85dp"
+                  android:drawableStart="@drawable/ic_arrow_upward"
+                  android:text="5.49%"
+                  android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                  android:textColor="@color/themeColorText"
+                  android:textSize="@dimen/_14sdp"
+                  android:textStyle="bold" />
+
+              <androidx.appcompat.widget.AppCompatTextView
+                  android:id="@+id/tvnumber"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@id/ivAdobeLogo"
+                  android:layout_marginLeft="@dimen/_20sdp"
+                  android:layout_marginTop="@dimen/_30sdp"
+                  android:text="33.49"
+                  android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/_25sdp"
+                  android:textStyle="bold" />
+
+              <androidx.appcompat.widget.AppCompatTextView
+                  android:id="@+id/tvDoller"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@id/tvnumber"
+                  android:layout_marginLeft="@dimen/_20sdp"
+                  android:text="$3349"
+                  android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                  android:textSize="@dimen/_15sdp" />
+
+              <ImageView
+                  android:layout_width="@dimen/_120sdp"
+                  android:layout_height="@dimen/_80sdp"
+                  android:layout_below="@id/ivAdobeLogo"
+                  android:layout_marginLeft="@dimen/_60sdp"
+                  android:layout_toRightOf="@id/tvDoller"
+                  android:src="@drawable/graph_icon" />
+          </RelativeLayout>
+
+         </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        app:layout_constraintTop_toBottomOf="@id/cardview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/stock_activity_layout"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.StockFragment"
+    >
+    <include
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/toolbar"
+        layout="@layout/item_toolbar"/>
+    <HorizontalScrollView
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/horizontalscroll1"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_170sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        app:cardBackgroundColor="@color/cardBackground"
+        android:elevation="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_20sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:padding="@dimen/_10sdp"
+                android:id="@+id/tvtitle"
+                android:textColor="@color/cardTextColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Portfolio Value"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="normal" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_below="@id/tvtitle"
+                android:padding="@dimen/_10sdp"
+                android:id="@+id/tvDollerPrice"
+                android:textColor="@color/cardTextColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$15,136.12"
+                android:textSize="@dimen/_25sdp"
+                android:textStyle="bold" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_below="@id/tvtitle"
+                android:layout_toRightOf="@id/tvDollerPrice"
+                android:padding="@dimen/_10sdp"
+                android:id="@+id/tvDollerPercente"
+                android:textColor="@color/cardTextColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="21%^"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnDeposit"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@id/tvDollerPrice"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:background="@drawable/btn_shape"
+                android:text="Deposit"
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:id="@+id/btnWithdraw"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@id/tvDollerPrice"
+                android:layout_toRightOf="@id/btnDeposit"
+                android:text="Withdraw"
+                android:background="@drawable/shape_only"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_170sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                app:cardBackgroundColor="@color/cardBackground"
+                android:elevation="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_20sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:padding="@dimen/_10sdp"
+                        android:id="@+id/tvtitle2"
+                        android:textColor="@color/cardTextColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Portfolio Value"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="normal" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_below="@id/tvtitle2"
+                        android:padding="@dimen/_10sdp"
+                        android:id="@+id/tvDollerPrice2"
+                        android:textColor="@color/cardTextColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$15,136.12"
+                        android:textSize="@dimen/_25sdp"
+                        android:textStyle="bold" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_below="@id/tvtitle2"
+                        android:layout_toRightOf="@id/tvDollerPrice2"
+                        android:padding="@dimen/_10sdp"
+                        android:id="@+id/tvDollerPercente2"
+                        android:textColor="@color/cardTextColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="21%^"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnDeposit2"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_below="@id/tvDollerPrice2"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:background="@drawable/btn_shape"
+                        android:text="Deposit"
+                        android:textColor="@color/white" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:textColor="@color/white"
+                        android:id="@+id/btnWithdraw2"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_below="@id/tvDollerPrice2"
+                        android:layout_toRightOf="@id/btnDeposit2"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:text="Withdraw" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    app:boxCornerRadiusTopStart="@dimen/_10sdp"
+    app:boxCornerRadiusTopEnd="@dimen/_10sdp"
+    app:startIconDrawable="@drawable/ic_baseline_search_24"
+    app:endIconDrawable="@drawable/ic_baseline_search_24"
+    android:id="@+id/edittextsearch"
+    app:layout_constraintTop_toBottomOf="@id/horizontalscroll1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <com.google.android.material.textfield.TextInputEditText
+        android:hint="Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</com.google.android.material.textfield.TextInputLayout>
+    <RelativeLayout
+        app:layout_constraintTop_toBottomOf="@id/edittextsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:id="@+id/rvstock"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            tools:listitem="@layout/market_mover_layout"
+            />
+    </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
